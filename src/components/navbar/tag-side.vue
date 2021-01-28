@@ -1,6 +1,14 @@
 <template>
   <div class="tag-side-nav">
-    这是标签
+    <div class="tag-item active">php</div>
+    <div class="tag-item">lavel</div>
+    <div class="tag-item">git</div>
+    <div class="tag-item">vue</div>
+    <div class="tag-item">css</div>
+    <div class="tag-item active">jquery</div>
+    <div class="tag-item">go</div>
+    <div class="tag-item">macos</div>
+    <div class="tag-item">mysql</div>
   </div>
 </template>
 
@@ -25,5 +33,20 @@ export default {
 }
 .tag-side-nav:hover {
   box-shadow: 0 0 25px 5px rgb(46 58 89 / 10%);
+}
+.tag-item {
+  display: inline-block;
+  color: #636b6f;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 15px;
+  background: linear-gradient(180deg,#dcf4ff,#f4fcff);
+  cursor: pointer;
+}
+.tag-item:hover {
+  box-shadow: 0 0 25px 5px rgb(46 58 89 / 10%);
+}
+.tag-item.active {
+  background: linear-gradient(180deg,#fff0ce,#fffcf6);
 }
 </style>

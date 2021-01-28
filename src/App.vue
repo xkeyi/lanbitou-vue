@@ -4,8 +4,7 @@
   <div class="container main-container">
     <router-view></router-view>
   </div>
-  
-   
+
   <Footer></Footer>
 
 </template>
@@ -25,8 +24,8 @@ export default {
 <style>
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
