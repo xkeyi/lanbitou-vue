@@ -32,7 +32,7 @@ export default {
   padding: 30px;
 }
 .tag-side-nav:hover {
-  box-shadow: 0 0 25px 5px rgb(46 58 89 / 10%);
+  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
 }
 .tag-item {
   display: inline-block;
@@ -44,7 +44,7 @@ export default {
   cursor: pointer;
 }
 .tag-item:hover {
-  box-shadow: 0 0 25px 5px rgb(46 58 89 / 10%);
+  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
 }
 .tag-item.active {
   background: linear-gradient(180deg,#fff0ce,#fffcf6);
