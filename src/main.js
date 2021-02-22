@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import http from './utils/http'
 import router from './router'
 import ElementPlus from 'element-plus';
 import 'element-plus/lib/theme-chalk/index.css';
@@ -17,9 +18,13 @@ import 'prismjs/components/prism-php';
 VueMarkdownEditor.use(vuepressTheme);
 VMdPreview.use(vuepressTheme);
 
-const app = createApp(App)
-app.use(router)
-app.use(ElementPlus)
+const app = createApp(App);
+
+app.config.globalProperties.$http = http;
+
+app.use(router);
+app.use(ElementPlus);
 app.use(VueMarkdownEditor);
 app.use(VMdPreview);
+
 app.mount('#app')
