@@ -6,14 +6,15 @@
           <div class="title">用户授权</div>
 
           <div class="meta">
-            <span>分类</span>/
+            <span>分类</span>
+            <el-divider direction="vertical"></el-divider>
             <span>时间等</span>
           </div>
 
           <el-divider></el-divider>
 
           <div class="content">
-            这是文章内容
+            <v-md-preview :text="markdown"></v-md-preview>
           </div>
         </div>
       </el-col>
@@ -27,7 +28,7 @@ export default {
   name: "BolgContent",
   data () {
     return {
-
+      markdown: '### 标题'
     }
   }
 };
@@ -39,7 +40,19 @@ export default {
   background-color: #fff;
   margin-bottom: 15px;
   border-radius: 30px;
-  padding: 20px;
+  padding: 30px;
   box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+}
+.title {
+  /*color: #636b6f;*/
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.meta {
+  color: #636b6f;
+  font-size: 14px;
+}
+.v-md-editor-preview {
+  padding: 0px;
 }
 </style>
